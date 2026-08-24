@@ -172,7 +172,7 @@ UserInputService.InputEnded:Connect(function(input)
     end
 end)
 
--- Bucle de renderizado para fijar la cámara en el objetivo (CORREGIDO)
+-- Bucle de renderizado para fijar la cámara en el objetivo
 RunService.RenderStepped:Connect(function()
     if _G.AimbotEnabled and Aiming then
         local target = GetClosestPlayer(_G.AimPart) -- Buscar objetivo para la AimPart seleccionada
@@ -187,7 +187,7 @@ RunService.RenderStepped:Connect(function()
 end)
 
 -- ====================================================================
--- CREACIÓN DE LA INTERFAZ GRÁFICA (MENÚ VISUAL)
+-- CREACIÓN DE LA INTERFAZ GRÁFICA (MENÚ VISUAL - ORION LIB)
 -- ====================================================================
 local Window = OrionLib:MakeWindow({
     Name = "Goku Hub Premium v3.0", 
